@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BLS jUMP-KIT An EMT Assessment Tool</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body ng-app="jump-kit">
+    <!-- NAVBAR -->
+    <div ng-include="'partials/navbar.html'"></div>
+    <div>
+
+        <!-- partial view div -->
+        <div ng-view></div>
+
+        <!-- Footer Hard Code: -->
+        <footer>
+            <p>© 2017<a style="color:red; text-decoration:none;" href="https://github.com/brooksquil"> Brooke Wittenberg</a>, All rights reserved 2017.</p>
+        </footer>
+        <!-- JQUERY -->
+        <script type="text/javascript" src="./lib/node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <script type="text/javascript" src="./lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- ANGULAR -->
+        <script type="text/javascript" src="./lib/node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="./lib/node_modules/angularjs-dropdown-multiselect/dist/src/angularjs-dropdown-multiselect.js"></script>
+        <script type="text/javascript" src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+        <!-- FIREBASE -->
+        <script type="text/javascript" src="./lib/node_modules/firebase/firebase.js"></script>
+        <!-- JAVASCRIPTS -->
+        <script src="./app/app.js"></script>
+        <script src="./app/values/fb.creds.js"></script>
+        <!-- FACTORIES -->
+        <script src="./app/factories/patient.factory.js"></script>
+        <script src="./app/factories/user.factory.js"></script>
+        <script src="./app/factories/handle.user.factory.js"></script>
+        <script src="./app/factories/history.factory.js"></script>
+        <script src="./app/factories/medical.factory.js"></script>
+        <!-- CONTROLLERS -->
+        <script src="./app/controllers/navbar.ctrl.js"></script>
+        <script src="./app/controllers/loggedout.ctrl.js"></script>
+        <script src="./app/controllers/profile.ctrl.js"></script>
+        <script src="./app/controllers/add.patient.controller.js"></script>
+        <script src="./app/controllers/history.ctrl.js"></script>
+        <script src="./app/controllers/report.ctrl.js"></script>
+        <script src="./app/controllers/select.patient.ctrl.js"></script>
+        <script src="./app/controllers/medical.ctrl.js"></script>
+
+
+</body>
+
+</html>
